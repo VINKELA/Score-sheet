@@ -1,0 +1,226 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Web App Landing Page Website Template | Smarteyeapps.com</title>
+<link rel="shortcut icon" href="/assets/app/images/fav.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="/assets/app/images/fav.jpg">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link rel="stylesheet" href="/assets/app/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/app/css/fontawsom-all.min.css">
+
+ <!--########################### Header Starts Here ###################### -->
+ <div class="home-screen container-fluid">
+  <div class="home-cover">
+   <div>
+     <div class="container" id="">
+         <form>
+             <div class="row col-md-9" id="login-form">
+               <div  class="registration-form row no-margin">
+                 <div class="col">
+                   <input type="text" [(ngModel)]="useremail" class="form-control login-input" id="loginEmail" name="loginEmail" placeholder="Email Address">
+                   <div  [class.failure] = "loginFailed" [class.success]="forgotPassword">{{messages}}</div>
+                  </div>
+                 <div class="col" [hidden]="forgotPassword">
+                   <input type="password" [(ngModel)]="userpassword" class="form-control login-input" name="loginPassword" id="loginPassword" placeholder="Password">
+                 </div>
+                 <div class="col">
+                   <button type="submit" (click)="onSubmit()" class="btn btn-success">{{forgotPassword? 'Reset Password': 'Login'}}</button>
+                   <div><a href="#" (click)="toggleForgotPassword()"><h6 id="register-letter">{{forgotPassword? 'Login':'Forgot Password?'}}</h6></a></div>
+                 </div>
+                </div>
+               </div>
+           </form>
+        </div>
+ </div>
+        <div class="container">
+           <div class="row home-detail">
+              <div class="col-md-7 homexp">
+                   <h5>Hello! Welcome to</h5>
+                   <h2>Score Sheet</h2>
+                   <span>Digital <a>Result System</a> </span>
+                   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+
+                     <a href="#register">Sign up to get started</a>
+
+               </div>
+
+               <div class="col-md-5 hom-form">
+                  <div class="registration-form row no-margin" id="register">
+                      <h5>Register to Start using Score Sheet for free!</h5>
+                      <input placeholder="School Name" type="text" class="form-control ">
+                      <input placeholder="Enter First Name" type="text" class="form-control ">
+                      <input placeholder="Enter Last Name" type="text" class="form-control ">
+                      <input placeholder="Enter Email Address" type="text" class="form-control ">
+                      <input placeholder="Enter Phone Number" type="text" class="form-control ">
+                      <button class="btn w-100 btn-success">Sign up</button>
+                  </div>
+              </div>
+           </div>
+        </div>
+  </div>
+</div>
+
+
+<!-- ################# Why Choos US Starts Here #######################--->
+
+<div class="why-choos-us container-fluid">
+<div class="container">
+  <div class="session-title">
+        <h2>Why Choos Us ?</h2>
+        <p>Sagittis vulputate magna sagittis sagittis erat feugiat nullam cubilia amet dignissim Euismod.</p>
+    </div>
+    <div class="why-ro row">
+        <div class="col-lg-4 col-md-6">
+            <div class="col-card">
+                <div class="icon">
+                    <i class="far fa-calendar-plus"></i>
+                </div>
+                <div class="detail">
+                    <h4>Educational Programs</h4>
+                    <p>Turpis accumsan. Proin id ligula suspendisse. Aliquet fringilla, aptent eu dignissim.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="col-card">
+                <div class="icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="detail">
+                    <h4>Value for Money</h4>
+                    <p>Turpis accumsan. Proin id ligula suspendisse. Aliquet fringilla, aptent eu dignissim.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="col-card">
+                <div class="icon">
+                   <i class="far fa-heart"></i>
+                </div>
+                <div class="detail">
+                    <h4>Passionate Teachers</h4>
+                    <p>Turpis accumsan. Proin id ligula suspendisse. Aliquet fringilla, aptent eu dignissim.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="col-card">
+                <div class="icon">
+                   <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="detail">
+                    <h4>Awesome Environment</h4>
+                    <p>Turpis accumsan. Proin id ligula suspendisse. Aliquet fringilla, aptent eu dignissim.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="col-card">
+                <div class="icon">
+                    <i class="fa fa-graduation-cap"></i>
+                </div>
+                <div class="detail">
+                    <h4>Certification</h4>
+                    <p>Turpis accumsan. Proin id ligula suspendisse. Aliquet fringilla, aptent eu dignissim.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="col-card">
+                <div class="icon">
+                    <i class="far fa-comments"></i>
+                </div>
+                <div class="detail">
+                    <h4>24 x 7 Support</h4>
+                    <p>Turpis accumsan. Proin id ligula suspendisse. Aliquet fringilla, aptent eu dignissim.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<!--*************** Footer  Starts Here *************** -->
+<footer id="cntact_us" class="container-fluid">
+<div class="container">
+    <div class="row content-ro">
+        <div class="col-lg-4 col-md-12 footer-contact">
+            <h2>Contact Informatins</h2>
+            <div class="address-row">
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="detail">
+                    <p>46-29 Indra Street, Southernbank, Tigaione, Toranto, 3006 Canada</p>
+                </div>
+            </div>
+            <div class="address-row">
+                <div class="icon">
+                    <i class="far fa-envelope"></i>
+                </div>
+                <div class="detail">
+                    <p>sales@smarteyeapps.com <br> support@smarteyeapps.com</p>
+                </div>
+            </div>
+            <div class="address-row">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="detail">
+                    <p>+91 9751791203 <br> +91 9159669599</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-links">
+           <div class="row no-margin mt-2">
+            <h2>Quick Links</h2>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contacts</li>
+                <li>Pricing</li>
+                <li>Gallery</li>
+                <li>eatures</li>
+
+            </ul>
+            </div>
+           <div class="row no-margin mt-1">
+               <h2 class="m-t-2">More Products</h2>
+             <ul>
+                <li>Forum PHP Script</li>
+                <li>Edu Smart</li>
+                <li>Smart Event</li>
+                <li>Smart School</li>
+
+
+            </ul>
+           </div>
+        </div>
+    </div>
+    <div class="footer-copy">
+        <div class="row">
+            <div class="col-lg-8 col-md-6">
+                <p>Copyright © <a href="https://www.smarteyeapps.com">Smarteyeapps.com</a> | All right reserved.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 socila-link">
+                <ul>
+                    <li><a><i class="fab fa-github"></i></a></li>
+                    <li><a><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a><i class="fab fa-pinterest-p"></i></a></li>
+                    <li><a><i class="fab fa-twitter"></i></a></li>
+                    <li><a><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+<div class="footer-bot-image d-none d-lg-block">
+<img src="/assets/app/images/slider_wav.png" alt="">
+</div>
+<script src="/assets/app/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/app/js/popper.min.js"></script>
+<script src="/assets/app/js/bootstrap.min.js"></script>
+<script src="/assets/app/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="/assets/app/js/script.js"></script>
